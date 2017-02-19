@@ -2,11 +2,11 @@
 
 namespace Bamiz\ScreamingWebshop\Application\AppBundle\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Bamiz\UseCaseBundle\Controller\UseCaseExecutingController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 
-class ProductController extends Controller
+class ProductController extends UseCaseExecutingController
 {
     /**
      * @param Request $httpRequest
@@ -15,6 +15,6 @@ class ProductController extends Controller
      */
     public function createAction(Request $httpRequest): JsonResponse
     {
-        return $this->get('bamiz_use_case.executor')->execute('create_product', $httpRequest);
+        return $this->createProduct($httpRequest);
     }
 }
