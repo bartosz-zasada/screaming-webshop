@@ -10,5 +10,5 @@ interface ProductFactory
      *
      * @return Product
      */
-    public function createProduct($name, $price);
+    public function createProduct($name, $price): Product;
 }

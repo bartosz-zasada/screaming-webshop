@@ -14,7 +14,7 @@ class ProductController extends Controller
      *
      * @return JsonResponse
      */
-    public function createAction(Request $httpRequest)
+    public function createAction(Request $httpRequest): JsonResponse
     {
         $request = new CreateProductRequest();
         $request->name = $httpRequest->query->get('name');

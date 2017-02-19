@@ -7,5 +7,5 @@ interface Product
     /**
      * @return int
      */
-    public function getId();
+    public function getId(): int;
 }

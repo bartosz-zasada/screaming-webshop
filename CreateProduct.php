@@ -24,7 +24,7 @@ class CreateProduct
      *
      * @return CreateProductResponse
      */
-    public function execute(CreateProductRequest $request)
+    public function execute(CreateProductRequest $request): CreateProductResponse
     {
         $product = $this->productFactory->createProduct($request->name, $request->price);
         $response = new CreateProductResponse();

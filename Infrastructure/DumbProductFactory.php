@@ -13,7 +13,7 @@ class DumbProductFactory implements ProductFactory
      *
      * @return Product
      */
-    public function createProduct($name, $price)
+    public function createProduct($name, $price): Product
     {
         $product = new DumbProduct(random_int(10000, 99999));
         $product->setName($name);
