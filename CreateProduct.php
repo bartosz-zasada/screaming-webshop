@@ -4,11 +4,13 @@ namespace Bamiz\ScreamingWebshop;
 
 use Bamiz\ScreamingWebshop\Entity\ProductFactory;
 use Bamiz\UseCaseBundle\Annotation\InputProcessor;
+use Bamiz\UseCaseBundle\Annotation\ResponseProcessor;
 use Bamiz\UseCaseBundle\Annotation\UseCase;
 
 /**
  * @UseCase()
  * @InputProcessor("http")
+ * @ResponseProcessor("json")
  */
 class CreateProduct
 {

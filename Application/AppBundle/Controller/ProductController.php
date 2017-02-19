@@ -15,8 +15,6 @@ class ProductController extends Controller
      */
     public function createAction(Request $httpRequest): JsonResponse
     {
-        $response = $this->get('bamiz_use_case.executor')->execute('create_product', $httpRequest);
-
-        return new JsonResponse($this->get('serializer')->serialize($response->product, 'json'), 200, [], true);
+        return $this->get('bamiz_use_case.executor')->execute('create_product', $httpRequest);
     }
 }
