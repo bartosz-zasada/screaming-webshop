@@ -3,6 +3,7 @@
 namespace Bamiz\ScreamingWebshop\Application;
 
 use Bamiz\ScreamingWebshop\Application\AppBundle\AppBundle;
+use Bamiz\UseCaseBundle\BamizUseCaseBundle;
 use Symfony\Bundle\FrameworkBundle\FrameworkBundle;
 use Symfony\Component\Config\Loader\LoaderInterface;
 use Symfony\Component\HttpKernel\Bundle\BundleInterface;
@@ -19,7 +20,8 @@ class AppKernel extends Kernel
     {
         return [
             new FrameworkBundle(),
-            new AppBundle()
+            new AppBundle(),
+            new BamizUseCaseBundle()
         ];
     }
 

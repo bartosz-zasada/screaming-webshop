@@ -4,8 +4,54 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "0f25299212f3d13fcef856a584416b9c",
+    "content-hash": "b34f8c9eeb643a3e8de17b7096296014",
     "packages": [
+        {
+            "name": "bamiz/use-case-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bartosz-zasada/use-case-bundle.git",
+                "reference": "eea94410e990f47698b86b8aafec4e1f450233dc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bartosz-zasada/use-case-bundle/zipball/eea94410e990f47698b86b8aafec4e1f450233dc",
+                "reference": "eea94410e990f47698b86b8aafec4e1f450233dc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0",
+                "symfony/dependency-injection": "~2.3|~3.0",
+                "symfony/form": "~2.3|~3.0",
+                "symfony/framework-bundle": "~2.3|~3.0",
+                "symfony/options-resolver": "~2.3|~3.0",
+                "symfony/serializer": "~2.3|~3.0"
+            },
+            "require-dev": {
+                "phpspec/phpspec": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Bamiz\\UseCaseBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bartosz Zasada",
+                    "email": "zasada.bartosz@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A Symfony Bundle that provides tools facilitating the isolation of business logic of your application from the delivery mechanisms.",
+            "homepage": "https://github.com/bartosz-zasada/use-case-bundle",
+            "time": "2017-01-25 20:49:43"
+        },
         {
             "name": "doctrine/annotations",
             "version": "v1.3.1",
@@ -1709,7 +1755,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "bamiz/use-case-bundle": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

@@ -3,7 +3,11 @@
 namespace Bamiz\ScreamingWebshop;
 
 use Bamiz\ScreamingWebshop\Entity\ProductFactory;
+use Bamiz\UseCaseBundle\Annotation\UseCase;
 
+/**
+ * @UseCase()
+ */
 class CreateProduct
 {
     /**
