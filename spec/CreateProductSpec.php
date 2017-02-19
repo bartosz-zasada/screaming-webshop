@@ -26,10 +26,9 @@ class CreateProductSpec extends ObjectBehavior
         $request->name = 'Awesome laptop';
         $request->price = 666.66;
 
-        $product->getId()->willReturn(123);
         $productFactory->createProduct($request->name, $request->price)->willReturn($product);
 
         $response = $this->execute($request);
-        $response->productId->shouldBe(123);
+        $response->product->shouldBe($product);
     }
 }

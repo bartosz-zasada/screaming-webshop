@@ -28,7 +28,7 @@ class CreateProduct
     {
         $product = $this->productFactory->createProduct($request->name, $request->price);
         $response = new CreateProductResponse();
-        $response->productId = $product->getId();
+        $response->product = $product;
 
         return $response;
     }

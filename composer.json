@@ -1,5 +1,7 @@
 {
-    "require": {},
+    "require": {
+        "symfony/symfony": "^3.2"
+    },
     "require-dev": {
         "phpspec/phpspec": "^3.2"
     },

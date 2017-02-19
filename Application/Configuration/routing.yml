@@ -1,0 +1,3 @@
+product_create:
+    path: /product/create
+    defaults: { _controller: AppBundle:Product:create }

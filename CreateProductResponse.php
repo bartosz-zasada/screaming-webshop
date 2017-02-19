@@ -2,10 +2,12 @@
 
 namespace Bamiz\ScreamingWebshop;
 
+use Bamiz\ScreamingWebshop\Entity\Product;
+
 class CreateProductResponse
 {
     /**
-     * @var int
+     * @var Product
      */
-    public $productId;
+    public $product;
 }
