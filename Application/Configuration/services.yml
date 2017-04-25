@@ -5,3 +5,5 @@ services:
     create_product_use_case:
         class: Bamiz\ScreamingWebshop\CreateProduct
         arguments: ['@product_factory']
+        tags:
+            - { name: use_case }

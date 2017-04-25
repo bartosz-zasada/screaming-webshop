@@ -1,6 +1,7 @@
 {
     "require": {
-        "symfony/symfony": "^3.2"
+        "symfony/symfony": "^3.2",
+        "bamiz/use-case-executor-bundle": "^0.5.0"
     },
     "require-dev": {
         "phpspec/phpspec": "^3.2"

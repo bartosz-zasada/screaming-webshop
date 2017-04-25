@@ -4,8 +4,99 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "0f25299212f3d13fcef856a584416b9c",
+    "content-hash": "02d611a27cee7fa3c039bd8f2815b609",
     "packages": [
+        {
+            "name": "bamiz/use-case-executor",
+            "version": "0.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bartosz-zasada/use-case-executor.git",
+                "reference": "1e0ee9aebdd2e52a6f106fac025bfe314a6466a8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bartosz-zasada/use-case-executor/zipball/1e0ee9aebdd2e52a6f106fac025bfe314a6466a8",
+                "reference": "1e0ee9aebdd2e52a6f106fac025bfe314a6466a8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0",
+                "symfony/options-resolver": "~2.3|~3.0"
+            },
+            "require-dev": {
+                "phpspec/phpspec": "^3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Bamiz\\UseCaseExecutor\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bartosz Zasada",
+                    "email": "zasada.bartosz@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A library that allows to execute use cases of your application in isolation from the delivery mechanism.",
+            "homepage": "https://github.com/bartosz-zasada/use-case-executor",
+            "time": "2017-03-26T18:34:47+00:00"
+        },
+        {
+            "name": "bamiz/use-case-executor-bundle",
+            "version": "0.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bartosz-zasada/use-case-executor-bundle.git",
+                "reference": "2bb0feab43c4740e6d0c42481e1e54d23f39efd3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bartosz-zasada/use-case-executor-bundle/zipball/2bb0feab43c4740e6d0c42481e1e54d23f39efd3",
+                "reference": "2bb0feab43c4740e6d0c42481e1e54d23f39efd3",
+                "shasum": ""
+            },
+            "require": {
+                "bamiz/use-case-executor": "0.5.0",
+                "doctrine/annotations": "^1.0",
+                "php": ">=5.5.0",
+                "symfony/dependency-injection": "~2.3|~3.0",
+                "symfony/form": "~2.3|~3.0",
+                "symfony/framework-bundle": "~2.3|~3.0",
+                "symfony/options-resolver": "~2.3|~3.0",
+                "symfony/serializer": "~2.3|~3.0",
+                "symfony/templating": "~2.3|~3.0"
+            },
+            "require-dev": {
+                "phpspec/phpspec": "^3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Bamiz\\UseCaseExecutorBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bartosz Zasada",
+                    "email": "zasada.bartosz@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A Symfony Bundle that provides tools facilitating the isolation of business logic of your application from the delivery mechanisms.",
+            "homepage": "https://github.com/bartosz-zasada/use-case-executor-bundle",
+            "time": "2017-03-27T16:12:58+00:00"
+        },
         {
             "name": "doctrine/annotations",
             "version": "v1.3.1",
